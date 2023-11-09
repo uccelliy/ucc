@@ -68,7 +68,16 @@ CMAKE_BINARY_DIR = /home/yinruochen/workspace/ucc/build
 # The main recursive "all" target.
 all: CMakeFiles/ucc.dir/all
 all: CMakeFiles/test.dir/all
+all: CMakeFiles/test_bytearray.dir/all
+all: CMakeFiles/test_socket.dir/all
+all: CMakeFiles/test_address.dir/all
+all: CMakeFiles/test_util.dir/all
+all: CMakeFiles/test_fiber.dir/all
+all: CMakeFiles/test_scheduler.dir/all
+all: CMakeFiles/test_iomanager.dir/all
+all: CMakeFiles/test_hook.dir/all
 all: CMakeFiles/test_config.dir/all
+all: CMakeFiles/test_thread.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,7 +87,16 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/ucc.dir/clean
 clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/test_bytearray.dir/clean
+clean: CMakeFiles/test_socket.dir/clean
+clean: CMakeFiles/test_address.dir/clean
+clean: CMakeFiles/test_util.dir/clean
+clean: CMakeFiles/test_fiber.dir/clean
+clean: CMakeFiles/test_scheduler.dir/clean
+clean: CMakeFiles/test_iomanager.dir/clean
+clean: CMakeFiles/test_hook.dir/clean
 clean: CMakeFiles/test_config.dir/clean
+clean: CMakeFiles/test_thread.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,12 +106,12 @@ clean: CMakeFiles/test_config.dir/clean
 CMakeFiles/ucc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ucc.dir/build.make CMakeFiles/ucc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ucc.dir/build.make CMakeFiles/ucc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=5,6,7,8 "Built target ucc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target ucc"
 .PHONY : CMakeFiles/ucc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ucc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ucc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
 .PHONY : CMakeFiles/ucc.dir/rule
@@ -119,7 +137,7 @@ CMakeFiles/test.dir/all: CMakeFiles/ucc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
 .PHONY : CMakeFiles/test.dir/rule
@@ -134,18 +152,226 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_bytearray.dir
+
+# All Build rule for target.
+CMakeFiles/test_bytearray.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=5,6 "Built target test_bytearray"
+.PHONY : CMakeFiles/test_bytearray.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_bytearray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_bytearray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_bytearray.dir/rule
+
+# Convenience name for target.
+test_bytearray: CMakeFiles/test_bytearray.dir/rule
+.PHONY : test_bytearray
+
+# clean rule for target.
+CMakeFiles/test_bytearray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/clean
+.PHONY : CMakeFiles/test_bytearray.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_socket.dir
+
+# All Build rule for target.
+CMakeFiles/test_socket.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=17,18 "Built target test_socket"
+.PHONY : CMakeFiles/test_socket.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_socket.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_socket.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_socket.dir/rule
+
+# Convenience name for target.
+test_socket: CMakeFiles/test_socket.dir/rule
+.PHONY : test_socket
+
+# clean rule for target.
+CMakeFiles/test_socket.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/clean
+.PHONY : CMakeFiles/test_socket.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_address.dir
+
+# All Build rule for target.
+CMakeFiles/test_address.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=3,4 "Built target test_address"
+.PHONY : CMakeFiles/test_address.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_address.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_address.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_address.dir/rule
+
+# Convenience name for target.
+test_address: CMakeFiles/test_address.dir/rule
+.PHONY : test_address
+
+# clean rule for target.
+CMakeFiles/test_address.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/clean
+.PHONY : CMakeFiles/test_address.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_util.dir
+
+# All Build rule for target.
+CMakeFiles/test_util.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=21,22 "Built target test_util"
+.PHONY : CMakeFiles/test_util.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_util.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_util.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_util.dir/rule
+
+# Convenience name for target.
+test_util: CMakeFiles/test_util.dir/rule
+.PHONY : test_util
+
+# clean rule for target.
+CMakeFiles/test_util.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/clean
+.PHONY : CMakeFiles/test_util.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_fiber.dir
+
+# All Build rule for target.
+CMakeFiles/test_fiber.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=9,10 "Built target test_fiber"
+.PHONY : CMakeFiles/test_fiber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_fiber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_fiber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_fiber.dir/rule
+
+# Convenience name for target.
+test_fiber: CMakeFiles/test_fiber.dir/rule
+.PHONY : test_fiber
+
+# clean rule for target.
+CMakeFiles/test_fiber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/clean
+.PHONY : CMakeFiles/test_fiber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_scheduler.dir
+
+# All Build rule for target.
+CMakeFiles/test_scheduler.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=15,16 "Built target test_scheduler"
+.PHONY : CMakeFiles/test_scheduler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_scheduler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_scheduler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_scheduler.dir/rule
+
+# Convenience name for target.
+test_scheduler: CMakeFiles/test_scheduler.dir/rule
+.PHONY : test_scheduler
+
+# clean rule for target.
+CMakeFiles/test_scheduler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/clean
+.PHONY : CMakeFiles/test_scheduler.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_iomanager.dir
+
+# All Build rule for target.
+CMakeFiles/test_iomanager.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=13,14 "Built target test_iomanager"
+.PHONY : CMakeFiles/test_iomanager.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_iomanager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_iomanager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_iomanager.dir/rule
+
+# Convenience name for target.
+test_iomanager: CMakeFiles/test_iomanager.dir/rule
+.PHONY : test_iomanager
+
+# clean rule for target.
+CMakeFiles/test_iomanager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/clean
+.PHONY : CMakeFiles/test_iomanager.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_hook.dir
+
+# All Build rule for target.
+CMakeFiles/test_hook.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=11,12 "Built target test_hook"
+.PHONY : CMakeFiles/test_hook.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_hook.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_hook.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_hook.dir/rule
+
+# Convenience name for target.
+test_hook: CMakeFiles/test_hook.dir/rule
+.PHONY : test_hook
+
+# clean rule for target.
+CMakeFiles/test_hook.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/clean
+.PHONY : CMakeFiles/test_hook.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_config.dir
 
 # All Build rule for target.
 CMakeFiles/test_config.dir/all: CMakeFiles/ucc.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=3,4 "Built target test_config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=7,8 "Built target test_config"
 .PHONY : CMakeFiles/test_config.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_config.dir/rule
@@ -158,6 +384,32 @@ test_config: CMakeFiles/test_config.dir/rule
 CMakeFiles/test_config.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/clean
 .PHONY : CMakeFiles/test_config.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_thread.dir
+
+# All Build rule for target.
+CMakeFiles/test_thread.dir/all: CMakeFiles/ucc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=19,20 "Built target test_thread"
+.PHONY : CMakeFiles/test_thread.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_thread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinruochen/workspace/ucc/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_thread.dir/rule
+
+# Convenience name for target.
+test_thread: CMakeFiles/test_thread.dir/rule
+.PHONY : test_thread
+
+# clean rule for target.
+CMakeFiles/test_thread.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/clean
+.PHONY : CMakeFiles/test_thread.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,14 @@
 /home/yinruochen/workspace/ucc/build/CMakeFiles/ucc.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_bytearray.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_socket.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_address.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_util.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_fiber.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_scheduler.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_iomanager.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_hook.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test_config.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_thread.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/edit_cache.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/rebuild_cache.dir

@@ -129,4 +129,13 @@ CMakeFiles/test.dir/tests/test.cpp.o: \
  /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/getopt.h /home/yinruochen/workspace/ucc/tests/../ucc/util.h
+ /usr/include/getopt.h \
+ /home/yinruochen/workspace/ucc/tests/../ucc/thread.h \
+ /usr/include/c++/4.8.2/thread /usr/include/c++/4.8.2/chrono \
+ /usr/include/c++/4.8.2/ratio /usr/include/c++/4.8.2/limits \
+ /usr/include/c++/4.8.2/ctime /usr/include/semaphore.h \
+ /usr/include/bits/semaphore.h /usr/include/c++/4.8.2/atomic \
+ /usr/include/c++/4.8.2/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdbool.h \
+ /home/yinruochen/workspace/ucc/tests/../ucc/noncopyable.h \
+ /home/yinruochen/workspace/ucc/tests/../ucc/util.h

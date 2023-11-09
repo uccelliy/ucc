@@ -3,7 +3,9 @@
 
 CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.cpp \
   /home/yinruochen/workspace/ucc/ucc/log.h \
+  /home/yinruochen/workspace/ucc/ucc/noncopyable.h \
   /home/yinruochen/workspace/ucc/ucc/singleton.h \
+  /home/yinruochen/workspace/ucc/ucc/thread.h \
   /home/yinruochen/workspace/ucc/ucc/util.h \
   /usr/include/_G_config.h \
   /usr/include/alloca.h \
@@ -23,6 +25,7 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
+  /usr/include/bits/semaphore.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/sigset.h \
   /usr/include/bits/stdio_lim.h \
@@ -38,10 +41,12 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/4.8.2/array \
+  /usr/include/c++/4.8.2/atomic \
   /usr/include/c++/4.8.2/backward/auto_ptr.h \
   /usr/include/c++/4.8.2/backward/binders.h \
   /usr/include/c++/4.8.2/bits/alloc_traits.h \
   /usr/include/c++/4.8.2/bits/allocator.h \
+  /usr/include/c++/4.8.2/bits/atomic_base.h \
   /usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h \
   /usr/include/c++/4.8.2/bits/basic_ios.h \
   /usr/include/c++/4.8.2/bits/basic_ios.tcc \
@@ -102,10 +107,12 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/c++/4.8.2/bits/vector.tcc \
   /usr/include/c++/4.8.2/cctype \
   /usr/include/c++/4.8.2/cerrno \
+  /usr/include/c++/4.8.2/chrono \
   /usr/include/c++/4.8.2/clocale \
   /usr/include/c++/4.8.2/cstdint \
   /usr/include/c++/4.8.2/cstdio \
   /usr/include/c++/4.8.2/cstdlib \
+  /usr/include/c++/4.8.2/ctime \
   /usr/include/c++/4.8.2/cwchar \
   /usr/include/c++/4.8.2/cwctype \
   /usr/include/c++/4.8.2/debug/debug.h \
@@ -124,15 +131,18 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/c++/4.8.2/iosfwd \
   /usr/include/c++/4.8.2/iostream \
   /usr/include/c++/4.8.2/istream \
+  /usr/include/c++/4.8.2/limits \
   /usr/include/c++/4.8.2/list \
   /usr/include/c++/4.8.2/map \
   /usr/include/c++/4.8.2/memory \
   /usr/include/c++/4.8.2/new \
   /usr/include/c++/4.8.2/ostream \
+  /usr/include/c++/4.8.2/ratio \
   /usr/include/c++/4.8.2/sstream \
   /usr/include/c++/4.8.2/stdexcept \
   /usr/include/c++/4.8.2/streambuf \
   /usr/include/c++/4.8.2/string \
+  /usr/include/c++/4.8.2/thread \
   /usr/include/c++/4.8.2/tuple \
   /usr/include/c++/4.8.2/type_traits \
   /usr/include/c++/4.8.2/typeinfo \
@@ -162,6 +172,7 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/semaphore.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -178,6 +189,7 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
   /usr/include/wctype.h \
   /usr/include/xlocale.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdbool.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h
 
@@ -186,17 +198,19 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
 
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdbool.h:
+
 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
 
 /usr/include/sys/types.h:
-
-/usr/include/sys/select.h:
 
 /usr/include/sys/cdefs.h:
 
 /usr/include/stdlib.h:
 
 /usr/include/stdio.h:
+
+/usr/include/semaphore.h:
 
 /usr/include/locale.h:
 
@@ -215,10 +229,6 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++io.h:
 
 /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:
 
 /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/basic_file.h:
 
@@ -266,37 +276,45 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/c++/4.8.2/cwctype:
 
+/usr/include/pthread.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:
+
+/usr/include/c++/4.8.2/ctime:
+
 /usr/include/c++/4.8.2/cstdio:
 
 /usr/include/c++/4.8.2/cstdint:
+
+/usr/include/c++/4.8.2/chrono:
 
 /usr/include/c++/4.8.2/cerrno:
 
 /usr/include/c++/4.8.2/bits/uses_allocator.h:
 
+/usr/include/c++/4.8.2/limits:
+
 /usr/include/c++/4.8.2/bits/unique_ptr.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/4.8.2/utility:
 
-/usr/include/bits/select.h:
+/usr/include/c++/4.8.2/bits/streambuf.tcc:
 
-/usr/include/c++/4.8.2/bits/basic_ios.tcc:
-
-/usr/include/sys/sysmacros.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/4.8.2/exception:
-
-/usr/include/c++/4.8.2/bits/basic_ios.h:
-
-/home/yinruochen/workspace/ucc/ucc/singleton.h:
+/usr/include/c++/4.8.2/bits/stl_vector.h:
 
 /usr/include/c++/4.8.2/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.8.2/cctype:
+
+/usr/include/c++/4.8.2/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.8.2/bits/locale_classes.tcc:
 
 /usr/include/errno.h:
 
 /usr/include/bits/types.h:
+
+/usr/include/c++/4.8.2/atomic:
 
 /usr/include/unistd.h:
 
@@ -310,27 +328,29 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/bits/syscall.h:
 
+/usr/include/sys/syscall.h:
+
+/usr/include/bits/pthreadtypes.h:
+
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/4.8.2/array:
 
-/usr/include/c++/4.8.2/bits/basic_string.h:
-
-/usr/include/bits/sched.h:
+/usr/include/c++/4.8.2/bits/atomic_base.h:
 
 /usr/include/c++/4.8.2/bits/functional_hash.h:
 
 /home/yinruochen/workspace/ucc/tests/test.cpp:
 
-/usr/include/c++/4.8.2/ext/new_allocator.h:
-
-/usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h:
-
-/usr/include/string.h:
-
-/usr/include/c++/4.8.2/bits/ostream.tcc:
-
 /usr/include/bits/setjmp.h:
+
+/usr/include/bits/semaphore.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/sched.h:
 
@@ -344,10 +364,6 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/bits/errno.h:
 
-/usr/include/bits/sigset.h:
-
-/usr/include/asm/unistd.h:
-
 /usr/include/_G_config.h:
 
 /usr/include/gnu/stubs.h:
@@ -360,9 +376,29 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/c++/4.8.2/bits/exception_defines.h:
 
+/home/yinruochen/workspace/ucc/ucc/singleton.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/4.8.2/exception:
+
+/usr/include/c++/4.8.2/bits/basic_ios.h:
+
 /usr/include/c++/4.8.2/bits/stl_list.h:
 
 /usr/include/asm/unistd_64.h:
+
+/home/yinruochen/workspace/ucc/ucc/noncopyable.h:
+
+/usr/include/c++/4.8.2/new:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/c++/4.8.2/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.8.2/bits/move.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -376,11 +412,17 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/c++/4.8.2/bits/fstream.tcc:
 
+/usr/include/sys/select.h:
+
+/home/yinruochen/workspace/ucc/ucc/thread.h:
+
+/usr/include/c++/4.8.2/bits/shared_ptr.h:
+
 /usr/include/asm/errno.h:
 
-/usr/include/sys/syscall.h:
+/usr/include/bits/sigset.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/asm/unistd.h:
 
 /usr/include/wchar.h:
 
@@ -392,9 +434,9 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/bits/stdlib-float.h:
 
-/usr/include/c++/4.8.2/bits/char_traits.h:
+/usr/include/c++/4.8.2/ratio:
 
-/usr/include/alloca.h:
+/usr/include/c++/4.8.2/bits/char_traits.h:
 
 /usr/include/c++/4.8.2/backward/auto_ptr.h:
 
@@ -424,13 +466,23 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/c++/4.8.2/bits/memoryfwd.h:
 
-/usr/include/c++/4.8.2/new:
+/usr/include/c++/4.8.2/ext/new_allocator.h:
 
-/usr/include/bits/posix_opt.h:
+/usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/string.h:
+
+/usr/include/c++/4.8.2/bits/ostream.tcc:
+
+/usr/include/c++/4.8.2/bits/basic_ios.tcc:
+
+/usr/include/bits/sched.h:
+
+/usr/include/c++/4.8.2/bits/basic_string.h:
 
 /usr/include/c++/4.8.2/bits/postypes.h:
+
+/usr/include/asm-generic/errno.h:
 
 /usr/include/c++/4.8.2/bits/codecvt.h:
 
@@ -455,6 +507,8 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 /usr/include/c++/4.8.2/bits/hash_bytes.h:
 
 /usr/include/c++/4.8.2/typeinfo:
+
+/usr/include/c++/4.8.2/thread:
 
 /usr/include/c++/4.8.2/ios:
 
@@ -502,8 +556,6 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 
 /usr/include/c++/4.8.2/bits/range_access.h:
 
-/usr/include/c++/4.8.2/bits/shared_ptr.h:
-
 /usr/include/c++/4.8.2/bits/stl_algobase.h:
 
 /usr/include/c++/4.8.2/bits/stl_construct.h:
@@ -523,19 +575,3 @@ CMakeFiles/test.dir/tests/test.cpp.o: /home/yinruochen/workspace/ucc/tests/test.
 /usr/include/c++/4.8.2/bits/stl_relops.h:
 
 /usr/include/c++/4.8.2/bits/stl_tempbuf.h:
-
-/usr/include/c++/4.8.2/cctype:
-
-/usr/include/c++/4.8.2/bits/locale_classes.tcc:
-
-/usr/include/c++/4.8.2/bits/stl_uninitialized.h:
-
-/usr/include/c++/4.8.2/bits/stl_vector.h:
-
-/usr/include/c++/4.8.2/utility:
-
-/usr/include/c++/4.8.2/bits/streambuf.tcc:
-
-/usr/include/c++/4.8.2/bits/move.h:
-
-/usr/include/c++/4.8.2/bits/streambuf_iterator.h:

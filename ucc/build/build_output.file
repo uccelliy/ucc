@@ -1,0 +1,28 @@
+/home/yinruochen/workspace/ucc/ucc/log.cpp:477:64: 错误：请求从‘ucc::ConfigVar<std::set<ucc::LogDefine> >::ptr {aka std::shared_ptr<ucc::ConfigVar<std::set<ucc::LogDefine> > >}’转换到非标量类型‘ucc::ConfigVar<std::set<ucc::LogDefine> >’
+  ucc::Config::Lookup("Logs",std::set<LogDefine>(),"logs config");
+                                                                ^
+/home/yinruochen/workspace/ucc/ucc/log.cpp: 在构造函数‘ucc::LogIniter::LogIniter()’中:
+/home/yinruochen/workspace/ucc/ucc/log.cpp:481:16: 错误：‘->’的基操作数具有非指针类型‘ucc::ConfigVar<std::set<ucc::LogDefine> >’
+   g_log_defines->addListener(0xF1E231,[](const std::set<LogDefine>& old_value,const std::set<LogDefine>& new_value){
+                ^
+In file included from /home/yinruochen/workspace/ucc/ucc/log.cpp:1:0:
+/home/yinruochen/workspace/ucc/ucc/log.cpp: 在 lambda 函数中:
+/home/yinruochen/workspace/ucc/ucc/log.h:37:70: 错误：对‘ucc::LogManager::getLogger(ucc::Logger::ptr)’的调用没有匹配的函数
+ #define UCC_LOG_NAME(name) ucc::LogMgr::GetInstance()->getLogger(name)
+                                                                      ^
+/home/yinruochen/workspace/ucc/ucc/log.cpp:482:4: 附注：in expansion of macro ‘UCC_LOG_NAME’
+    UCC_LOG_NAME(UCC_LOG_ROOT())<<"on_logger_conf_changed";
+    ^
+/home/yinruochen/workspace/ucc/ucc/log.h:37:70: 附注：备选是：
+ #define UCC_LOG_NAME(name) ucc::LogMgr::GetInstance()->getLogger(name)
+                                                                      ^
+/home/yinruochen/workspace/ucc/ucc/log.cpp:482:4: 附注：in expansion of macro ‘UCC_LOG_NAME’
+    UCC_LOG_NAME(UCC_LOG_ROOT())<<"on_logger_conf_changed";
+    ^
+/home/yinruochen/workspace/ucc/ucc/log.cpp:353:13: 附注：ucc::Logger::ptr ucc::LogManager::getLogger(const string&)
+ Logger::ptr LogManager::getLogger(const std::string& name){
+             ^
+/home/yinruochen/workspace/ucc/ucc/log.cpp:353:13: 附注：  no known conversion for argument 1 from ‘ucc::Logger::ptr {aka std::shared_ptr<ucc::Logger>}’ to ‘const string& {aka const std::basic_string<char>&}’
+make[2]: *** [CMakeFiles/ucc.dir/ucc/log.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/ucc.dir/all] 错误 2
+make: *** [all] 错误 2
