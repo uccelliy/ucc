@@ -86,7 +86,7 @@ int64_t Socket::getRecvTimeout(){
 
 }
 
-void Socket::setRecvTimeour(int64_t v){
+void Socket::setRecvTimeout(int64_t v){
 	struct timeval  tv{int(v/1000), int(v%1000*1000)};
 	setOption(SOL_SOCKET , SO_RCVTIMEO , tv);
 }
@@ -153,6 +153,15 @@ bool Socket::bind(const Address::ptr addr){
 		return false;
 	}
 
+	UnixAddress::ptr uaddr = std::dynamic_pointer_cast<UnixAddress>(addr);
+	if(uaddr){
+		Socket::ptr sock = Socket::CreateUnixTCPSocket();
+		if(sock->connect(uaddr)){
+			return false;
+		}else{
+		}
+	}
+
 	if(::bind(m_sock ,addr->getAddr(),addr->getAddrlen())){
 		UCC_LOG_ERROR(g_logger)<<"bind errno="<<errno
 			<<"strerr="<<strerror(errno);
@@ -163,6 +172,7 @@ bool Socket::bind(const Address::ptr addr){
 }
 
 bool Socket::connect(const Address::ptr addr , uint64_t timeout_ms ){
+	m_remoteAddress = addr;
 	if(!isValid()){
 		newSock();
 		if(UCC_UNLICKLY(!isValid())){
@@ -314,6 +324,7 @@ Address::ptr Socket::getRemoteAddress(){
 			break;
 		case AF_UNIX:
 			result.reset(new UnixAddress());
+			break;
 		default:
 			result.reset(new UnknownAddress(m_family));
 			break;
@@ -347,6 +358,7 @@ Address::ptr Socket::getLocalAddress(){
 			break;
 		case AF_UNIX:
 			result.reset(new UnixAddress());
+			break;
 		default:
 			result.reset(new UnknownAddress(m_family));
 			break;
@@ -428,6 +440,10 @@ void Socket::newSock(){
 			<<","<<m_type<<","<<m_protocol<<")errnp="
 			<<errno<<"errstr = "<<strerror(errno);
 	}
+}
+
+std::ostream& operator<<(std::ostream& os , const Socket& sock){
+	return sock.dump(os);
 }
 
 }

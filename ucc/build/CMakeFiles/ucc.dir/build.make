@@ -254,6 +254,160 @@ CMakeFiles/ucc.dir/ucc/socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/socket.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/socket.cpp -o CMakeFiles/ucc.dir/ucc/socket.cpp.s
 
+CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o: /home/yinruochen/workspace/ucc/ucc/tcp_server.cpp
+CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o -MF CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o.d -o CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o -c /home/yinruochen/workspace/ucc/ucc/tcp_server.cpp
+
+CMakeFiles/ucc.dir/ucc/tcp_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/tcp_server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/tcp_server.cpp > CMakeFiles/ucc.dir/ucc/tcp_server.cpp.i
+
+CMakeFiles/ucc.dir/ucc/tcp_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/tcp_server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/tcp_server.cpp -o CMakeFiles/ucc.dir/ucc/tcp_server.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http.cpp
+CMakeFiles/ucc.dir/ucc/http/http.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http.cpp > CMakeFiles/ucc.dir/ucc/http/http.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http.cpp -o CMakeFiles/ucc.dir/ucc/http/http.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http11_parser.rl.cpp
+CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http11_parser.rl.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http11_parser.rl.cpp > CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http11_parser.rl.cpp -o CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/httpclient_parser.rl.cpp
+CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/httpclient_parser.rl.cpp
+
+CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/httpclient_parser.rl.cpp > CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/httpclient_parser.rl.cpp -o CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http_parser.cpp
+CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http_parser.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http_parser.cpp > CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http_parser.cpp -o CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http_session.cpp
+CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http_session.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http_session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http_session.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http_session.cpp > CMakeFiles/ucc.dir/ucc/http/http_session.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http_session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http_session.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http_session.cpp -o CMakeFiles/ucc.dir/ucc/http/http_session.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http_server.cpp
+CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http_server.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http_server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http_server.cpp > CMakeFiles/ucc.dir/ucc/http/http_server.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http_server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http_server.cpp -o CMakeFiles/ucc.dir/ucc/http/http_server.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/http_connection.cpp
+CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/http_connection.cpp
+
+CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/http_connection.cpp > CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/http_connection.cpp -o CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.s
+
+CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o: /home/yinruochen/workspace/ucc/ucc/http/servlet.cpp
+CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o -MF CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o.d -o CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o -c /home/yinruochen/workspace/ucc/ucc/http/servlet.cpp
+
+CMakeFiles/ucc.dir/ucc/http/servlet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/http/servlet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/http/servlet.cpp > CMakeFiles/ucc.dir/ucc/http/servlet.cpp.i
+
+CMakeFiles/ucc.dir/ucc/http/servlet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/http/servlet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/http/servlet.cpp -o CMakeFiles/ucc.dir/ucc/http/servlet.cpp.s
+
+CMakeFiles/ucc.dir/ucc/stream.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/stream.cpp.o: /home/yinruochen/workspace/ucc/ucc/stream.cpp
+CMakeFiles/ucc.dir/ucc/stream.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ucc.dir/ucc/stream.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/stream.cpp.o -MF CMakeFiles/ucc.dir/ucc/stream.cpp.o.d -o CMakeFiles/ucc.dir/ucc/stream.cpp.o -c /home/yinruochen/workspace/ucc/ucc/stream.cpp
+
+CMakeFiles/ucc.dir/ucc/stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/stream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/stream.cpp > CMakeFiles/ucc.dir/ucc/stream.cpp.i
+
+CMakeFiles/ucc.dir/ucc/stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/stream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/stream.cpp -o CMakeFiles/ucc.dir/ucc/stream.cpp.s
+
+CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o: CMakeFiles/ucc.dir/flags.make
+CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o: /home/yinruochen/workspace/ucc/ucc/socket_stream.cpp
+CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o: CMakeFiles/ucc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o -MF CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o.d -o CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o -c /home/yinruochen/workspace/ucc/ucc/socket_stream.cpp
+
+CMakeFiles/ucc.dir/ucc/socket_stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ucc.dir/ucc/socket_stream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinruochen/workspace/ucc/ucc/socket_stream.cpp > CMakeFiles/ucc.dir/ucc/socket_stream.cpp.i
+
+CMakeFiles/ucc.dir/ucc/socket_stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ucc.dir/ucc/socket_stream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinruochen/workspace/ucc/ucc/socket_stream.cpp -o CMakeFiles/ucc.dir/ucc/socket_stream.cpp.s
+
 # Object files for target ucc
 ucc_OBJECTS = \
 "CMakeFiles/ucc.dir/ucc/log.cpp.o" \
@@ -268,7 +422,18 @@ ucc_OBJECTS = \
 "CMakeFiles/ucc.dir/ucc/fd_manager.cpp.o" \
 "CMakeFiles/ucc.dir/ucc/bytearray.cpp.o" \
 "CMakeFiles/ucc.dir/ucc/address.cpp.o" \
-"CMakeFiles/ucc.dir/ucc/socket.cpp.o"
+"CMakeFiles/ucc.dir/ucc/socket.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/stream.cpp.o" \
+"CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o"
 
 # External object files for target ucc
 ucc_EXTERNAL_OBJECTS =
@@ -286,9 +451,20 @@ ucc_EXTERNAL_OBJECTS =
 /home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/bytearray.cpp.o
 /home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/address.cpp.o
 /home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/socket.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/tcp_server.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http11_parser.rl.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/httpclient_parser.rl.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http_parser.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http_session.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http_server.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/http_connection.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/http/servlet.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/stream.cpp.o
+/home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/ucc/socket_stream.cpp.o
 /home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/build.make
 /home/yinruochen/workspace/ucc/lib/libucc.so: CMakeFiles/ucc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library /home/yinruochen/workspace/ucc/lib/libucc.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yinruochen/workspace/ucc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library /home/yinruochen/workspace/ucc/lib/libucc.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ucc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

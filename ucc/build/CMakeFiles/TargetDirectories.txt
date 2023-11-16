@@ -1,5 +1,11 @@
 /home/yinruochen/workspace/ucc/build/CMakeFiles/ucc.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/echo_server.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_tcp_server.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_http_connection.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_http_server.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_http.dir
+/home/yinruochen/workspace/ucc/build/CMakeFiles/test_http_parser.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test_bytearray.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test_socket.dir
 /home/yinruochen/workspace/ucc/build/CMakeFiles/test_address.dir

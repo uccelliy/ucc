@@ -16,7 +16,7 @@ public:
 		TCP = SOCK_STREAM,
 		UDP = SOCK_DGRAM,	
 	};
-	
+	 
 	enum Family{
 		IPv4 = AF_INET,
 		IPv6 = AF_INET6,
@@ -41,7 +41,7 @@ public:
 	void setSendTimeout(int64_t v);
 
 	int64_t getRecvTimeout();
-	void setRecvTimeour(int64_t v);
+	void setRecvTimeout(int64_t v);
 
 	bool getOption(int level , int option , void* result , size_t* len);
 	template<class T>
@@ -105,6 +105,8 @@ private:
 	Address::ptr m_localAddress;
 	Address::ptr m_remoteAddress;
 };
+
+std::ostream& operator<<(std::ostream& os , const Socket& sock);
 
 }
 

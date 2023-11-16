@@ -46,6 +46,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ucc.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/echo_server.dir/DependInfo.cmake"
+  "CMakeFiles/test_tcp_server.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_connection.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_server.dir/DependInfo.cmake"
+  "CMakeFiles/test_http.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
   "CMakeFiles/test_bytearray.dir/DependInfo.cmake"
   "CMakeFiles/test_socket.dir/DependInfo.cmake"
   "CMakeFiles/test_address.dir/DependInfo.cmake"

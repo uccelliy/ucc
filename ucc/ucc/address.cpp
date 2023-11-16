@@ -103,7 +103,7 @@ bool Address::Lookup(std::vector<Address::ptr>& result, const std::string& host,
 	}
 
 	freeaddrinfo(results);
-	return true;
+	return !result.empty();
 }
 
 Address::ptr Address::LookupAny(const std::string& host,
@@ -128,7 +128,7 @@ IPAddress::ptr Address::LookupAnyIPAddress(const std::string& host,int family , 
 	return nullptr;
 }
 
-std::string Address::toString(){
+std::string Address::toString() const{
 	std::stringstream ss;
 	insert(ss);
 	return ss.str();
@@ -303,7 +303,7 @@ std::ostream& IPv4Address::insert(std::ostream& os) const {
 		<<((addr>>16)&0xff)<<"."
 		<<((addr>>8)&0xff)<<"."
 		<<(addr & 0xff);
-	os<<"."<<byteswapOnLittleEndian(m_addr.sin_port);
+	os<<":"<<byteswapOnLittleEndian(m_addr.sin_port);
 	return os;
 }
 
@@ -460,6 +460,7 @@ void IPv6Address::setPort(uint16_t v) {
 }
 
 static const size_t MAX_PATH_LEN = sizeof(((sockaddr_un*)0)->sun_path)-1;
+
 UnixAddress::UnixAddress(){
 	memset(&m_addr, 0 ,sizeof(m_addr));
 	m_addr.sun_family = AF_UNIX;
@@ -531,6 +532,10 @@ socklen_t UnknownAddress::getAddrlen() const {
 std::ostream& UnknownAddress::insert(std::ostream& os) const {
 	os<<"{UnknownAddress family="<<m_addr.sa_family<<"]";
 	return os;
+}
+
+std::ostream& operator<<(std::ostream& os ,const Address& addr){
+	return addr.insert(os);
 }
 
 }
