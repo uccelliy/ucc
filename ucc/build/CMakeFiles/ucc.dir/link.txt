@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -shared -Wl,-soname,libucc.so -o /home/yinruochen/workspace/ucc/lib/libucc.so CMakeFiles/ucc.dir/ucc/log.cpp.o CMakeFiles/ucc.dir/ucc/util.cpp.o CMakeFiles/ucc.dir/ucc/config.cpp.o 
