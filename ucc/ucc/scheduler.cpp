@@ -202,6 +202,7 @@ void Scheduler::run(){
 				cb_fiber.reset();
 			}
 		}else{
+			//is_active是在判断什么是否活跃？
 			if(is_active){
 				--m_activeThreadCount;
 				continue;
