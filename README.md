@@ -32,6 +32,16 @@ GetFiberId()
 在具体实现中，首先是定义两个静态全局线程拥有的t_fiber作为主协程，因为ucontext.h的关键在于getcontext，setcontext，makecontext，swapcontext三个函数
 
 线程池模块
+线程池模块在scheduler部分中实现，主要为scheduler类。类中有scheduler的智能指针和互斥锁。构造函数需要三个形参分别是初始线程数默认为1，use_caller默认为true，和一个字符串作为线程池的名字。线程池中用一个线程数组存储线程，把协程存放在一个FiberAndThread的列表里。还有一个根协程。一个主线程池（线程静态），一个主协程（线程静态）。采用轮询，每个fiber代表一个任务，或者直接传入需调用的方法。如果没用在执行就拿出执行，执行一段时间放出控制权，继续轮询，直到idle函数执行完都没有新任务就注销掉。
+start()
+stop()在线程数为0，根协程存在并且是终止或者初始化状态才能终止，如果根线程存在那么当前的线程池是应当是当前的线程负责的线程池，把线程池中的线程都放到一个新的数组中，再把数组中的线程join关闭掉。
+模板函数schedule(T,int)
+tickle()
+run()运行函数
+stoppoing()
+idle()
+模板函数scheduleNoLock(T,int)
+结构体FiberAndThread 其中包括构造函数和一个方法reset()，属性有上面定义的协程的智能指针，一个函数指针，int
 
 
 ##
