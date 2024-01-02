@@ -41,7 +41,7 @@ run()运行函数
 stoppoing()
 idle()
 模板函数scheduleNoLock(T,int)
-结构体FiberAndThread 其中包括构造函数和一个方法reset()，属性有上面定义的协程的智能指针，一个函数指针，int
+结构体FiberAndThread 其中包括构造函数和一个方法reset()，属性有上面定义的协程的智能指针，一个函数指针，int。
 
 
 ## 网络编程相关
@@ -52,6 +52,7 @@ IP地址
 socket相关
 
 ## 定时器
+定时器头文件中实现TimeManager和Timer两个类，他们互为友元类（强耦合），定时器的抽象为Timer而TimerManager是Timer的管理类，也是外部接口。在Timer中有三种行为分别为取消，更新和重置。以及声明了一个仿函数，作为比较器（在后面实现最小堆时作为自定义的比较函数）。在TimerManager中有一个存放Timer的集合（最小堆）。获得时间的方式是调用了linux函数gettimeofday()函数。Timer中如果到了计时时间就会上锁并且执行其中的回调函数。TimeManager中的一个重要函数是listExpiredCb这个函数会对已经过期的定时器进行检查，如果这个定时器指定了recur那么就把定时器的时间更新再次放入执行。否则就把定时器中的回调函数置为空。
 
 ## 句柄管理器
 
