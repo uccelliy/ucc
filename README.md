@@ -1,6 +1,5 @@
 # ucc
-study project
-
+study project，一个服务器框架现在只实现了静态服务器。
 
 ## 日志模块（log4j）
 日志模块在log.h中定义生成日志并输出的类，在log.cpp中实现，最关键的实现是log.cpp的格式初始化方法，该方法接受用户自主输入的日志输出选项，解析并按照用户需求输出日志。此外就是日志输出器的两个继承类，一个负责输出到控制台，另外一个负责输出到文件。
@@ -43,16 +42,22 @@ idle()
 模板函数scheduleNoLock(T,int)
 结构体FiberAndThread 其中包括构造函数和一个方法reset()，属性有上面定义的协程的智能指针，一个函数指针，int。
 
-
 ## 网络编程相关
 IP地址
+把IPv4，IPv6，Unix地址封装到一起。
+
+序列化
+
 
 字节序
+检测字节序，提供了两个函数分别按照大端序和小端序输出输入的序列。
 
 socket相关
+socket.h中封装了socket的相关函数（socket，connect，listen..）
+socket_stream中封装了io相关函数
 
 ## 定时器
-定时器头文件中实现TimeManager和Timer两个类，他们互为友元类（强耦合），定时器的抽象为Timer而TimerManager是Timer的管理类，也是外部接口。在Timer中有三种行为分别为取消，更新和重置。以及声明了一个仿函数，作为比较器（在后面实现最小堆时作为自定义的比较函数）。在TimerManager中有一个存放Timer的集合（最小堆）。获得时间的方式是调用了linux函数gettimeofday()函数。Timer中如果到了计时时间就会上锁并且执行其中的回调函数。TimeManager中的一个重要函数是listExpiredCb这个函数会对已经过期的定时器进行检查，如果这个定时器指定了recur那么就把定时器的时间更新再次放入执行。否则就把定时器中的回调函数置为空。
+定时器头文件中实现TimeManager和Timer两个类，他们互为友元，定时器的抽象为Timer而TimerManager是Timer的管理类，也是外部接口。在Timer中有三种行为分别为取消，更新和重置。以及声明了一个仿函数，作为比较器（在后面实现最小堆时作为自定义的比较函数）。在TimerManager中有一个存放Timer的集合（最小堆）。获得时间的方式是调用了linux函数gettimeofday()函数。Timer中如果到了计时时间就会上锁并且执行其中的回调函数。TimeManager中的一个重要函数是listExpiredCb这个函数会对已经过期的定时器进行检查，如果这个定时器指定了recur那么就把定时器的时间更新再次放入执行。否则就把定时器中的回调函数置为空。
 
 ## 句柄管理器
 
