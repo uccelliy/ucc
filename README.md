@@ -42,6 +42,8 @@ idle()
 模板函数scheduleNoLock(T,int)
 结构体FiberAndThread 其中包括构造函数和一个方法reset()，属性有上面定义的协程的智能指针，一个函数指针，int。
 
+## IOManager
+
 ## hook与异步IO
 
 ## 网络编程相关
