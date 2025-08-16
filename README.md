@@ -1,5 +1,5 @@
 # ucc
-study project，一个服务器框架现在只实现了静态服务器。
+This is a server including log system， thread pool system, and IO system.
 
 ## 日志模块（log4j）
 日志模块在log.h中定义生成日志并输出的类，在log.cpp中实现，最关键的实现是log.cpp的格式初始化方法，该方法接受用户自主输入的日志输出选项，解析并按照用户需求输出日志。此外就是日志输出器的两个继承类，一个负责输出到控制台，另外一个负责输出到文件。
